@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <title>Document</title>
+</head>
+<header>
+    <h1>The K9 Cleaners</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="register.html">Register</a>
+            <a href="contact.html">Contact</a>
+            <a href="gallery.html">Gallery</a>
+        </nav>
+   
+</header>
+<body>
+    <!--creat a form with the following inputs
+    name,age,gender,bread,serivce,owner,owner contact(#)-->
+
+        <div class="input-container">
+            <div class="form-control">
+                <input type="text" id="txtName" placeholder="Enter pet name">
+            </div>
+            <div class="form-control">
+                <input type="number" id="txtAge" placeholder="Enter the age">
+            </div>
+            <div class="form-control">
+                <input type="text" id="txtGender" placeholder="Enter the gender">
+            </div>
+            <div>
+                <input type="text" id="txtBreed" placeholder="Enter the breed">
+            </div>
+            <div>
+                <input type="text" id="txtOwner" placeholder="Enter the your name">
+            </div>
+            <div>
+                <input type="text" id="txtContact" placeholder="Enter your number">
+            </div>
+            <div class="form-control">
+                <select id="selService">
+                    <option value="nail trim">Nail trim</option>
+                    <option value="Grooming">Grooming</option>
+                    <option value="Shower">Shower</option>
+                </select>
+            </div>
+            <button onclick="register();">Register</button>
+        </div>
+
+    <div>
+        <input type="text" id="txtSearch" placeholder="Enter your pets name">
+        <button onclick="searchPet()">Search</button>
+        <button id="btnClear" onclick="showPetsCards()">Clear</button>
+    </div>
+
+    <h2 id="headerList" class="pets"> Pet List</h2>
+
+    <div id="petList" class="pets">
+        <!--display the pets-->
+    </div>
+
+        <div id="salonInformation">
+
+        </div>
+    <script src="scripts/register.js"></script>
+    <script src="scripts/displayinfo.js"></script>
+    <footer>
+        <p class="footer">2021-2022 All rights reserved</p>
+        
+    </footer>
+</body>
+</html>
